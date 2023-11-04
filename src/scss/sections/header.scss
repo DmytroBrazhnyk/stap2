@@ -4,7 +4,9 @@
 .header_container{
     width: 100%;
     height: 718px;
-    background-image: url("/img/img\ 3.png");
+    background-image: url("/img/header_img\ 1.png");
+    background-position: center;
+    background-size: cover;
 }
 .header_nav_container{
     height: 103px;
@@ -153,8 +155,3 @@
     display: flex;
 }
 
-@media (min-width : 321px){
-    .container{
-        width: 100%;
-    }
-}
