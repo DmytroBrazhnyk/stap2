@@ -115,28 +115,28 @@
             height: 166px;
             box-sizing: border-box;
             &_1{
-                padding: 0 8px;
-                height: 162px;
+                padding: 0px 8px 4px 9px;
+                height: 168px;
             }
             &_2{
                 height: 166px;
                 padding: 0 12px;
             }
             &_3{
-                padding: 0 20px;
-                height: 171px;
+                padding: 0px 20px 4px 21px;
+                height: 175px;
             }
             &_4{
-                padding: 0 9px;
-                height: 143px;
+                padding: 0px 9px 4px 10px;
+                height: 147px;
             }
             &_5{
-                padding: 0 5px;
-                height: 147px;
+                padding: 0px 5px 4px 5px;
+                height: 151px;
             }
             &_6{
                 padding: 0 22px;
-                height: 165px;
+                height: 173px;
             }
             &_info{
                 color: #FFF;
@@ -162,7 +162,6 @@
     }
     &_decorative{
         width: 80%;
-        height: 2px;
         border: 1px solid rgba(100, 87, 102, 1);
         margin-top: 22px;
     }
