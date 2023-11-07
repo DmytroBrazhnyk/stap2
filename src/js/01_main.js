@@ -13,6 +13,11 @@ window.onclick = function(event){
         toglgleBurger();
     }
 }
+window.addEventListener('resize', function(){
+    if (window.innerWidth >= 520 && burger_btn_cross.classList.contains("active_burgerBtn")) {
+        toglgleBurger();
+    }
+});
 function toglgleBurger(){
     burger_btn.classList.toggle("active_burgerBtn");
     burger_btn_cross.classList.toggle("active_burgerBtn");
