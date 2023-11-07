@@ -181,12 +181,13 @@
         line-height: 38px;
     }
     & .features__content_wrapper{
-        width: 269px;
+        justify-content: center;
         margin: 0 auto;
         margin-top: 36px;
         flex-wrap: wrap;
         gap: 40px;
         & .feature__wrapper{
+            width: 269px;
             & .feature__img{
                 margin: 0 auto;
                 display: block;
@@ -233,6 +234,10 @@
         margin-top: 64px;
         & .features__img{
             height: 381px;
+            width: 100%;
+            object-fit: cover;
+            object-position: left;
+            padding-right: 0;
         }
     }
 }
@@ -256,6 +261,7 @@
     & .pricing__card_wrapper{
         flex-wrap: wrap;
         margin-top: 32px;
+        padding-bottom: 10px;
         gap: 18px;
         & .pricing__card{
             width: 257px;
