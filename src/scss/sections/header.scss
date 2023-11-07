@@ -72,6 +72,9 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        &_logo{
+            display: none;
+        }
         &_nav{
             display: flex;
             justify-content: center;
@@ -92,6 +95,10 @@
                 }
             }
         }
+        &_buyBtn{
+            display: none;
+        }
+        
     }
 }
 .forkApp{
@@ -259,5 +266,57 @@
 @media(min-width : 706px){
     .header_download{
         padding-top: 420px;
+    }
+}
+//-------------------------------------------------
+@media(min-width : 993px){
+    .header_container{
+        height: 800px;
+        background-image: url("/img/header_img\ 1.png");
+    }
+    .header_nav_container{
+        background: none;
+    }
+    .headerContent{
+        display: none;
+    }
+    .headerContent_hResolutin{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;
+        justify-content: space-between;
+        &_container{
+            display: flex;
+            gap :48px;
+        }
+        &_logo{
+            display: flex;
+            align-items: center;
+        }
+        &_buyBtn{
+            display: block;
+        }
+    }
+    .forkApp{
+        padding-top: 68px;
+        &_title{
+            font-size: 82px;
+        }
+        &_subTitle{
+            font-size: 30px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+        }
+        &_osInfo{
+            font-size: 16px;
+        }
+    }
+    .header_download{
+        padding-top: 405px;
+    }
+}
+@media(min-width : 1100px){
+    .headerContent_hResolutin{
+        padding: 0 80px;
     }
 }
