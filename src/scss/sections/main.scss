@@ -78,6 +78,94 @@
     }
     
 }
+// section People Are Talking About Fork
+.aboutFork{
+    &_wrapper{
+        background-image: url("/img/testmonials-bg\ 22.png");
+        background-position: center;
+        background-size: cover;
+        height: 1631px;
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_title{
+        padding-top: 57px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    &_deck{
+        padding-top: 53px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+        &_card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 291px;
+            height: 166px;
+            box-sizing: border-box;
+            &_1{
+                padding: 0px 8px 4px 9px;
+                height: 168px;
+            }
+            &_2{
+                height: 166px;
+                padding: 0 12px;
+            }
+            &_3{
+                padding: 0px 20px 4px 21px;
+                height: 175px;
+            }
+            &_4{
+                padding: 0px 9px 4px 10px;
+                height: 147px;
+            }
+            &_5{
+                padding: 0px 5px 4px 5px;
+                height: 151px;
+            }
+            &_6{
+                padding: 0 22px;
+                height: 173px;
+            }
+            &_info{
+                color: #FFF;
+                text-align: center;
+                font-family: Lato;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+    }
+    &_paragraph{
+        padding-top: 29px;
+        width: 251px;
+        color: #A291A5;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    &_decorative{
+        width: 80%;
+        border: 1px solid rgba(100, 87, 102, 1);
+        margin-top: 22px;
+    }
+}
 
 // section Here is what you get
 
