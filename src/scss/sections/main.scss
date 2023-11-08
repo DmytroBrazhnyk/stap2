@@ -4,7 +4,7 @@
     margin-top: 80px;
     margin-bottom: 120px;
     & .editor__title{
-        width: 273px;
+        width: 100%;
         margin: 0 auto;
         color: #635C73;
         text-align: center;
@@ -171,7 +171,6 @@
 
 .features__wrapper{
     & .features__tittle{
-        width: 230px;
         margin: 0 auto;
         color: #8D81AC;
         text-align: center;
@@ -181,12 +180,13 @@
         line-height: 38px;
     }
     & .features__content_wrapper{
-        width: 269px;
+        justify-content: center;
         margin: 0 auto;
         margin-top: 36px;
         flex-wrap: wrap;
         gap: 40px;
         & .feature__wrapper{
+            width: 269px;
             & .feature__img{
                 margin: 0 auto;
                 display: block;
@@ -231,8 +231,14 @@
     }
     & .features__img_wrapper{
         margin-top: 64px;
+        position: relative;
+        right: -10px;
         & .features__img{
             height: 381px;
+            width: 100%;
+            object-fit: cover;
+            object-position: left;
+            padding-right: 0;
         }
     }
 }
@@ -256,6 +262,7 @@
     & .pricing__card_wrapper{
         flex-wrap: wrap;
         margin-top: 32px;
+        padding-bottom: 10px;
         gap: 18px;
         & .pricing__card{
             width: 257px;
@@ -352,8 +359,211 @@
             }
         }
     }
-}   
+}     
 
-//--------------------------------------
+// media
 
-//--------------------------------------
+@media (min-width: 481px) {
+    .revolutionary-editor_wrapper{
+        margin-bottom: 160px;
+        & .editor__title{
+            font-size: 42px;
+            line-height: 40px;
+        }
+        & .editor__text{
+            width: 100%;
+            font-size: 21px;
+            line-height: 32px;
+        }
+        & .editor__buttons_wrapper{
+            width: 100%;
+            & .button_wrapper{
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
+    .features__wrapper{
+        & .features__tittle{
+            font-size: 42px;
+        }
+        & .features__content_wrapper{
+            margin-top: 52px;
+            gap: 60px;
+            & .feature__wrapper{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 23px;
+                & .feature__img1{
+                    margin-left: 30px;
+                    margin-right: 21px;
+                }
+                & .feature__img2{
+                    margin-left: 27px;
+                    margin-right: 44px;
+                }
+                & .feature__img3{
+                    margin-left: 44px;
+                    margin-right: 57px;
+                }
+                & .feature__img4{
+                    margin-left: 37px;
+                    margin-right: 54px;
+                }
+                & .feature__text_wrapper{
+                    margin: 0;
+                    & .feature__tittle, .feature__text{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        & .features__img_wrapper{
+            margin-left: 58px;
+            margin-top: 76px;
+            margin-right: 0;
+            overflow: hidden;
+            & .features__img{
+                height: auto;
+                padding: 0;
+            }
+        }
+    }
+
+    .pricing__wrapper{
+        background-image: url(../../img/Layer2.png);
+        & .pricing__tittle{
+            width: 100%;
+            font-size: 42px;
+        }
+        & .pricing__card_wrapper{
+            width: 460px;
+            margin: 0 auto;
+            margin-top: 39px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 594px) {
+    .pricing__wrapper{
+        & .pricing__card_wrapper{
+            width: 574px;
+            justify-content: center;
+            padding-bottom: 94px;
+            & .pricing__card{
+                margin: 0;
+                &:first-child{
+                    margin: 0 0 0 39px;
+                }
+                &:last-child{
+                    margin: 41px 0 0 0;
+                }
+            }
+            & .special-card{
+                margin: 0;
+            }
+        }
+    }
+}
+
+// desktop
+
+@media (min-width: 993px){
+    .features__wrapper{
+        & .features__tittle{
+            font-size: 35px;
+            width: 459px;
+        }
+    }
+}
+
+@media (min-width: 995px) {
+    .revolutionary-editor_wrapper{
+        margin-bottom: 70px;
+        & .editor__title{
+            font-size: 54px;
+            margin-bottom: 35px;
+        }
+        & .editor__text{
+            width: 861px;
+        }
+    }
+
+    .features__wrapper{
+        background-color: #F4F4F4;
+        padding-bottom: 33px;
+        display: grid;
+        grid-template-rows: auto;
+        // grid-template-columns: 50% 50%;
+        justify-items: end;
+        justify-content: space-between;
+        overflow: hidden;
+        & .features__tittle{
+            grid-row: span 1/2;
+            grid-column: 2;
+            padding-top: 100px;
+            margin-left: 10px;
+            width: 463px;
+            position: relative;
+        }
+        & .features__content_wrapper{
+            grid-row: span 1/2;
+            grid-column: 1;
+            width: 100%;
+            margin-top: 103px;
+            gap: 41px;
+            & .feature__wrapper{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                gap: 23px;
+                & .feature__text_wrapper{
+                    margin: 0;
+                    & .feature__tittle, .feature__text{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        & .features__img_wrapper{
+            grid-row: span 1/2;
+            grid-column: 2;
+            margin: 0;
+            margin-top: 138px;
+            margin-right: -10px;
+            height: 519px;
+            overflow: hidden;
+            & .features__img{
+                padding: 0;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1185px){
+    .pricing__wrapper{
+        background-image: url(../../img/Layer21.png);
+        & .pricing__tittle{
+            font-size: 48px;
+        }
+        & .pricing__card_wrapper{
+            width: 100%;
+            align-items: center;
+            margin-top: 61px;
+            & .pricing__card{
+                &:first-child{
+                    margin: 0;
+                }
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
