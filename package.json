@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "ftp": "gulp deploy",
-    "build-ftp": "npm run build && npm run ftp"
+    "build-ftp": "npm run build && npm run ftp",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -41,6 +42,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "sass": "^1.56.0"
   }
 }

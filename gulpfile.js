@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const requireDir = require('require-dir');
 const tasks = requireDir('./tasks');
+const ghPages = require('gulp-gh-pages')
 
 exports.libs_style = tasks.libs_style;
 exports.svg_css = tasks.svg_css;
@@ -37,3 +38,11 @@ exports.default = gulp.parallel(
   exports.bs_html,
   exports.watch
 )
+
+gulp.task('deploy', function(){
+  return gulp.src('./dist/**/*')
+  .pipe(ghPages({
+    remoteUrl: "https://github.com/Sellfkilled/stepproj2",
+    branch: "gh-pages",
+  }))
+})
