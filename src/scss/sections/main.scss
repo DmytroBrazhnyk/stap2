@@ -269,6 +269,7 @@
             width: 257px;
             height: 457px;
             margin: 0 auto;
+            position: relative;
             background-color: rgba($color: #ffffff, $alpha: 0.11);
             & .pricing__card_tittle{
                 color: #FFF;
@@ -320,12 +321,13 @@
                 line-height: 28px;
             }
             & .pricing__card_btn{
+                position: absolute;
+                left: 48px;
+                bottom: 37px;
                 width: 163px;
                 height: 45px;
                 border: none;
                 border-radius: 40px;
-                margin: 0 auto;
-                margin-top: 37px;
                 display: block;
                 color: #FFF;
                 font-family: Montserrat;
