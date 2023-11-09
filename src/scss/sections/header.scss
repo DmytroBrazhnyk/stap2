@@ -132,6 +132,7 @@
     justify-content: center;
     align-items: center;
     &_btn{
+        box-sizing: border-box;
         padding: 12px 39px;
         color: #FFF;
         text-align: center;
@@ -314,9 +315,29 @@
     .header_download{
         padding-top: 405px;
     }
+    .headerContent_logo_name{
+        padding-left: 17px;
+    }
+    .headerContent_hResolutin_nav_list_item:hover a {
+        color:#FFF;
+    }
+    .headerContent_hResolutin_logo:hover .headerContent_logo_name {
+        color:#FFF;
+    }
+    .headerContent_hResolutin_buyBtn:hover {
+        background-color: #FFF;
+        color: #8D81AC;
+        border: 1px solid #8D81AC;
+    }
+    .header_download_btn:hover {
+        background-color: #FFF;
+        color: #8D81AC;
+        border: 1px solid #8D81AC;
+    }
 }
 @media(min-width : 1100px){
     .headerContent_hResolutin{
         padding: 0 80px;
     }
 }
+
