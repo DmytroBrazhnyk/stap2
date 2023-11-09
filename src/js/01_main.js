@@ -23,4 +23,9 @@ function toglgleBurger(){
     burger_btn_cross.classList.toggle("active_burgerBtn");
     burger_menu.classList.toggle("active_burgerMenu");
 }
-
+function changeImage() {
+    document.querySelector('#logoImg').src = "/img/logo-hover\ 1.png";
+}
+function restoreImage() {
+    document.querySelector('#logoImg').src = '/img/Logo.png';
+}
